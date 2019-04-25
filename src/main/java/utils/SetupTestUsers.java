@@ -19,9 +19,9 @@ public class SetupTestUsers {
     em.getTransaction().begin();
     Role userRole = new Role("user");
     Role adminRole = new Role("admin");
-    User user = new User("user", "test");
+    User user = new User("user", "test123");
     user.addRole(userRole);
-    User admin = new User("admin", "test");
+    User admin = new User("admin", "test321");
     admin.addRole(adminRole);
     User both = new User("user_admin", "test");
     both.addRole(userRole);
